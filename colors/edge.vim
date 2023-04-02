@@ -1481,6 +1481,11 @@ call edge#highlight('LightspeedPendingOpArea', s:palette.bg0, s:palette.green)
 highlight! link LightspeedMaskedChar Purple
 highlight! link LightspeedGreyWash Grey
 " }}}
+" jackMort/ChatGPT.nvim {{{
+" highlight! link ChatGPTTotalTokens TabLineFill
+call edge#highlight('ChatGPTTotalTokens', s:palette.grey, s:palette.bg1)
+call edge#highlight('ChatGPTTotalTokensBorder', s:palette.bg1, s:palette.none)
+" }}}
 endif
 " }}}
 " Extended File Types: {{{
