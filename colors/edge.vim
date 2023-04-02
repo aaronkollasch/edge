@@ -129,6 +129,8 @@ if s:configuration.float_style ==# 'dim'
   call edge#highlight('NormalFloat', s:palette.fg, s:palette.bg_dim)
   call edge#highlight('FloatBorder', s:palette.grey, s:palette.bg_dim)
   call edge#highlight('FloatTitle', s:palette.purple, s:palette.bg0, 'bold')
+  call edge#highlight('FloatShadow', s:palette.none, s:palette.bg4)
+  call edge#highlight('FloatShadowThrough', s:palette.none, s:palette.bg4)
 elseif s:configuration.float_style ==# 'blend'
   if s:configuration.transparent_background
     highlight! link NormalFloat Normal
@@ -139,10 +141,14 @@ elseif s:configuration.float_style ==# 'blend'
     call edge#highlight('FloatBorder', s:palette.grey, s:palette.bg0)
     call edge#highlight('FloatTitle', s:palette.purple, s:palette.bg1, 'bold')
   endif
+  call edge#highlight('FloatShadow', s:palette.none, s:palette.none)
+  call edge#highlight('FloatShadowThrough', s:palette.none, s:palette.none)
 else
   call edge#highlight('NormalFloat', s:palette.fg, s:palette.bg2)
   call edge#highlight('FloatBorder', s:palette.grey, s:palette.bg2)
   call edge#highlight('FloatTitle', s:palette.purple, s:palette.bg4, 'bold')
+  call edge#highlight('FloatShadow', s:palette.none, s:palette.bg_grey)
+  call edge#highlight('FloatShadowThrough', s:palette.none, s:palette.bg_grey)
 endif
 call edge#highlight('Question', s:palette.yellow, s:palette.none)
 if s:configuration.spell_foreground ==# 'none'
