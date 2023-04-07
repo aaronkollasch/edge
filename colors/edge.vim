@@ -1481,6 +1481,11 @@ call edge#highlight('LightspeedPendingOpArea', s:palette.bg0, s:palette.green)
 highlight! link LightspeedMaskedChar Purple
 highlight! link LightspeedGreyWash Grey
 " }}}
+" SmiteshP/nvim-navbuddy {{{
+highlight! link NavbuddyNormalFloat Normal
+highlight! link NavbuddyFloatBorder Grey
+" highlight! link NavbuddyCursor Cursor " disrupts NavbuddyCursorLine
+" }}}
 " jackMort/ChatGPT.nvim {{{
 " highlight! link ChatGPTTotalTokens TabLineFill
 call edge#highlight('ChatGPTTotalTokens', s:palette.grey, s:palette.bg1)
