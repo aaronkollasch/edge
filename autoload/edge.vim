@@ -141,7 +141,7 @@ function! edge#get_palette(style, dim_foreground, colors_override) "{{{
           \ 'bg0':           ['#fafafa',   '231'],
           \ 'bg1':           ['#eef1f4',   '255'],
           \ 'bg2':           ['#e8ebf0',   '254'],
-          \ 'bg3':           ['#e8ebf0',   '253'],
+          \ 'bg3':           ['#e3e6eb',   '253'],
           \ 'bg4':           ['#dde2e7',   '253'],
           \ 'bg_grey':       ['#bcc5cf',   '246'],
           \ 'bg_red':        ['#f6e4e4',   '217'],
