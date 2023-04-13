@@ -1296,6 +1296,7 @@ highlight! link NotifyWARNTitle Yellow
 highlight! link NotifyINFOTitle Green
 highlight! link NotifyDEBUGTitle Grey
 highlight! link NotifyTRACETitle Purple
+call edge#highlight('NotifyBackground', s:palette.none, s:palette.bg_dim)
 " }}}
 " rcarriga/nvim-dap-ui {{{
 call edge#highlight('DapUIModifiedValue', s:palette.cyan, s:palette.none, 'bold')
