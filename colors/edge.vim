@@ -1492,6 +1492,14 @@ highlight! link NavbuddyFloatBorder Grey
 call edge#highlight('ChatGPTTotalTokens', s:palette.grey, s:palette.bg1)
 call edge#highlight('ChatGPTTotalTokensBorder', s:palette.bg1, s:palette.none)
 " }}}
+" hat0uma/csvview.nvim {{{
+highlight! link CsvViewDelimiter Comment
+if s:configuration.float_style ==# 'dim'
+  call edge#highlight('CsvViewHeaderLine', s:palette.none, s:palette.bg_dim)
+else
+  call edge#highlight('CsvViewHeaderLine', s:palette.none, s:palette.bg2)
+endif
+" }}}
 endif
 " }}}
 " Extended File Types: {{{
@@ -3045,6 +3053,17 @@ highlight! link helpCommand Cyan
 highlight! link helpExample Green
 highlight! link helpSpecial Yellow
 highlight! link helpSectionDelim Grey
+" syn_end }}}
+" syn_begin: csv {{{
+highlight! link csvCol0 Red
+highlight! link csvCol1 Yellow
+highlight! link csvCol2 Green
+highlight! link csvCol3 Cyan
+highlight! link csvCol4 Blue
+highlight! link csvCol5 Purple
+highlight! link csvCol6 Green
+highlight! link csvCol7 Cyan
+highlight! link csvCol8 Blue
 " syn_end }}}
 " }}}
 
