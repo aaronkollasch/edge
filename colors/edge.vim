@@ -10,7 +10,7 @@
 let s:configuration = edge#get_configuration()
 let s:palette = edge#get_palette(s:configuration.style, s:configuration.dim_foreground, s:configuration.colors_override)
 let s:path = expand('<sfile>:p') " the path of this script
-let s:last_modified = '2025年 12月 06日 星期六 05:11:25 UTC'
+let s:last_modified = 'Sun Jan  4 08:58:12 UTC 2026'
 let g:edge_loaded_file_types = []
 
 if !(exists('g:colors_name') && g:colors_name ==# 'edge' && s:configuration.better_performance)
@@ -71,7 +71,7 @@ call edge#highlight('ColorColumn', s:palette.none, s:palette.bg1)
 call edge#highlight('Conceal', s:palette.grey_dim, s:palette.none)
 if s:configuration.cursor ==# 'auto'
   call edge#highlight('Cursor', s:palette.none, s:palette.none, 'reverse')
-else
+elseif s:configuration.cursor != ''
   call edge#highlight('Cursor', s:palette.bg0, s:palette[s:configuration.cursor])
 endif
 highlight! link vCursor Cursor
